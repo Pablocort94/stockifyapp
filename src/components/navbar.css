@@ -1,0 +1,87 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #004953;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  /* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Center Section */
+.navbar-center {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-center button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-center button:hover {
+    color: #ddd;
+  }
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+  align-items: center; /* Vertically aligns items to the center */
+
+}
+
+.login-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.get-started-button {
+  padding: 5px 15px;
+  background-color: #fc5c7d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #d1b464;
+  color: #004953;
+
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none; /* Hide center links on small screens */
+  }
+}

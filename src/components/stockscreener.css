@@ -1,0 +1,187 @@
+.stock-screener {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f7faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .stock-screener h1 {
+    font-size: 3rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+  }
+  
+  .stock-screener button {
+    padding: 5px 15px;
+    background-color: #fc5c7d;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  
+  .stock-screener button:hover {
+    background-color: #004953;
+    color: #d1b464;  
+  }
+
+  .filter-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+
+  .filter-row select, .filter-row input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  select:focus {
+    border-color: #004953;
+    outline: none;
+  }
+  
+  .stock-screener h2 {
+    font-size: 1.5rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+  }
+  
+   .field-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible columns */
+    gap: 10px; /* Space between columns */
+    margin-top: 1rem;
+  }
+
+  .group-title {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #004953;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .group-title:hover {
+    background-color: #d1b464;
+    transform: scale(1.02);
+  }
+
+  
+  .fields-list {
+    margin-left: 0.5px;
+    padding: 2px;
+    border-left: 2px solid #ccc;
+    background: rgba(0, 117, 102, 0.05);
+    border-radius: 5px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-in;
+    overflow: hidden;
+  }
+  
+  .field-item {
+    display: block;
+    padding: 4px 4px;
+    margin: 4px 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 6px;
+    white-space: wrap;    /* Prevent text from wrapping */
+    max-width: 200px;       /* Optional: limit field width if necessary */
+    overflow: hidden;       /* Hide overflow if the text is too long */
+    text-overflow: ellipsis;/* Add "..." if text overflows */
+    box-sizing: border-box;
+  }
+  
+  .field-item:hover {
+    background-color: #d1b464; /* Light gray for hover */
+  }
+  
+  .field-item.selected {
+    background-color: #004953; /* Blue for selected */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .field-item.disabled {
+    color: #aaa; /* Gray out for default (non-clickable) fields */
+    cursor: not-allowed;
+  }
+  
+  .table-container {
+    max-width: 100%;
+    max-height: 400px; /* Adjust based on your layout */
+    overflow-x: auto;  /* Horizontal scrolling for many columns */
+    overflow-y: auto;  /* Vertical scrolling for many rows */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.1px;
+    position: relative; /* Ensures proper positioning for sticky elements */
+
+
+  }
+
+  .scrollable-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .scrollable-table thead th {
+    background-color: #004953;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    position: sticky;
+    top: 0;  /* Keeps headers fixed while scrolling */
+    z-index: 2;
+    border: 1px solid #ddd;
+  }
+
+  .scrollable-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1px solid #ddd;
+    text-align: left;
+
+  }
+  
+  .scrollable-table tbody tr{
+    text-align: center;
+
+  }
+
+  .scrollable-table tbody tr:hover {
+    background-color: rgba(0, 117, 102, 0.2);
+  }
+
+  .scrollable-table thead th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #004953; /* Ensure it's colored like other headers */
+    color: white;
+    z-index: 15; /* Ensures it stays ABOVE table body */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  }

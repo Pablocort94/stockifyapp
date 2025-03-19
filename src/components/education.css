@@ -1,0 +1,41 @@
+.education-container {
+    background: linear-gradient(135deg, #f0f4ff, #e8f0ff);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px #d1b464; /* Double border effect with inset shadow */
+    text-align: center;
+    margin: 20px;
+    
+  }
+  
+  .education-container h1 {
+    font-size: 3rem;
+    color: #004953;
+    margin-bottom: 15px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+
+  }
+  
+  .education-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .education-container a {
+    text-decoration: none;
+    color: #004953;
+    font-weight: 600;
+    border: 2px solid #004953;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .education-container a:hover {
+    background-color: #004953;
+    color: #d1b464;
+  }

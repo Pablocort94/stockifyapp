@@ -1,0 +1,202 @@
+/* Simulation Game Container */
+.simulation-game-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #f7faff, #e6f3ff);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .simulation-game-container h1 {
+    font-size: 3em;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    color: #004953;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #d1b464;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .simulation-game-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #004953;
+  }
+  
+  /* Button Styles */
+  .play-game-button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #fb6ac3, #fc5c7d);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.5);
+  }
+  
+  .play-game-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .simulation-game-starts h2 {
+    font-size: 1.5rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+  }
+  
+  .simulation-game-cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .simulation-game-stock-card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .simulation-game-stock-card h4 {
+    font-size: 1em;
+    text-align: center;
+    filter: blur(5px); /* Adjust blur intensity if needed */
+    transition: filter 0.3s ease-in-out;
+    
+  }
+
+  .invest-input-container label{
+    color: #004953;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+
+  .invest-input {
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .simulation-game-stock-card p {
+    padding: 0.5px;
+  }
+
+ .play-again-button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #fb6ac3, #fc5c7d);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.5);
+ }
+
+ .play-again-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.see-results-button {
+  padding: 12px 24px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #fb6ac3, #fc5c7d);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.5);
+}
+
+.see-results-button:hover {
+background-color: #0056b3;
+transform: scale(1.05);
+}
+ 
+  /* Remaining Funds */
+  .remaining-funds {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+    
+  /* Input Styles */
+  input[type="number"] {
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .simulation-results-container h3 {
+    font-size: 1.5rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+
+  }
+
+  .simulation-game-stock-card-results {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+   
+  /* Results Card */
+  .results-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+  }
+  
+  .results-card h4 {
+    text-align: center;
+  }
+  
+  .results-card p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Centered Button */
+  .centered-button {
+    text-align: center;
+    margin-top: 20px;
+  }

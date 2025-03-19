@@ -1,0 +1,93 @@
+/* Contact.css */
+
+/* Container Styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: linear-gradient(135deg, #004953 0%, #004953 100%);
+  padding: 20px;
+}
+
+/* Card Styling */
+.contact-card {
+  background: linear-gradient(135deg, #f0f4ff, #e8f0ff);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Header Styling */
+.contact-header {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #2b5876;
+  background: linear-gradient(135deg, #004953 0%, #004953 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d1b464;
+}
+
+/* Message Styling */
+.contact-message {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #004953;
+}
+
+/* Form Styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6a82fb;
+}
+
+/* Button Styling */
+.contact-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #fb6ac3, #fc5c7d);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.5);
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(252, 92, 125, 0.6);
+}
+
+.contact-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.5);
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #2b5876;
+  font-weight: bold;
+}

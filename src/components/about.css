@@ -1,0 +1,56 @@
+.about-container {
+  background: linear-gradient(135deg, #004953 0%, #004953 100%);
+  color: #f2efde;
+  padding: 40px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column; /* Stack the top and bottom sections */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between the top and bottom sections */
+}
+
+.about-top {
+  display: flex; /* Arrange logo and heading side by side */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center within the container */
+  gap: 40px; /* Space between logo and heading */
+  width: 100%; /* Take full width of the container */
+}
+
+.about-logo {
+  max-width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f2efde;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-heading {
+  font-size: 4rem;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fffff0;
+  background: linear-gradient(135deg, #d1b464 0%, #8f7841 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  text-align: left; /* Align text to the left */
+}
+
+.about-bottom {
+  border-top: 2px solid #d1b464; /* Separator between sections */
+  padding-top: 20px; /* Space above the text */
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px; /* Limit the width of the text for better readability */
+}
+

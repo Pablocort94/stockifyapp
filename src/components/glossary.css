@@ -1,0 +1,77 @@
+.glossary-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #f7faff, #e6f3ff);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+.glossary-container h1 {
+    font-size: 3rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+  }
+
+  /* Entry Container */
+.glossary-container div {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #004953;
+  }
+  
+  /* Hover Effect */
+  .glossary-container div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    background: #f6e0a5;
+  }
+  
+  /* Entry Titles */
+  .glossary-container h2 {
+    font-size: 24px;
+    color: #004953;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph Styling */
+  .glossary-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #004953;
+  }
+  
+  /* Bold Labels */
+  .glossary-container p strong {
+    color: #004953;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .glossary-container {
+      padding: 15px;
+    }
+  
+    .glossary-container h1 {
+      font-size: 28px;
+    }
+  
+    .glossary-container h2 {
+      font-size: 22px;
+    }
+  
+    .glossary-container p {
+      font-size: 15px;
+    }
+  }
+

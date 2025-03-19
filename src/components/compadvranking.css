@@ -1,0 +1,92 @@
+.competitive-advantage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f7faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.competitive-advantage-container h1 {
+    font-size: 3rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+}
+
+.table-wrapper {
+    max-height: 600px; /* Adjust based on your needs */
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+}
+/* Table styles */
+.competitive-advantage-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    max-height: 400px; /* Adjust based on your layout */
+    overflow-x: auto;  /* Horizontal scrolling for many columns */
+    overflow-y: auto;  /* Vertical scrolling for many rows */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.1px;
+    position: relative; /* Ensures proper positioning for sticky elements */
+}
+
+/* Table header styles */
+.competitive-advantage-table th {
+    background-color: #004953;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;  /* Keeps headers fixed while scrolling */
+    z-index: 2;
+    border: 1px solid #ddd;
+}
+
+.competitive-advantage-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.competitive-advantage-table tbody td{
+    text-align: center;
+
+  }
+
+  .competitive-advantage-table tbody tr:hover {
+    background-color: rgba(0, 117, 102, 0.2);
+  }
+
+  .competitive-advantage-table thead th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #004953; /* Ensure it's colored like other headers */
+    color: white;
+    z-index: 15; /* Ensures it stays ABOVE table body */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .moat-strength {
+    color: #d1b464; /* Gold-like color for moat strength */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.moat-score {
+    font-family: "Arial", sans-serif;
+    color: #004953; 
+    font-weight: bold;
+    font-size: 0.9rem;
+}

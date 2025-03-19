@@ -1,0 +1,112 @@
+.learning-lounge-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f7faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learning-lounge-container h1 {
+    font-size: 3rem;
+    color: #004953;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1b464;
+    text-transform: uppercase;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 0 auto 30px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Maintain consistent card size */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .video-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+   }
+  
+  
+  .video-card h2 {
+    font-size: 1.5rem;
+    color: #004953;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #d1b464;
+
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .video-card p {
+    font-size: 1rem;
+    color: #004953;
+    text-align: justify;
+  }
+
+  .video-card.beginner {
+    background-color: #d4f8e8; /* Light green */
+  }
+  
+  .video-card.intermediate {
+    background-color: #fff4cc; /* Light yellow */
+  }
+  
+  .video-card.advanced {
+    background-color: #ffe4cc; /* Light orange */
+  }
+  
+  .video-card.expert {
+    background-color: #ffd6d6; /* Light red */
+  }
+
+  /* Darker robust tones for the level-label */
+.level-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.level-label.beginner {
+  background-color: #2c7a37; /* Dark green */
+}
+
+.level-label.intermediate {
+  background-color: #c79200; /* Dark yellow */
+}
+
+.level-label.advanced {
+  background-color: #b04b00; /* Dark orange */
+}
+
+.level-label.expert {
+  background-color: #a71d2a; /* Dark red */
+}

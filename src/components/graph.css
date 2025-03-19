@@ -1,0 +1,14 @@
+.graph-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .graph-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
