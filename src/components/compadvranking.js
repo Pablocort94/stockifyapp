@@ -11,7 +11,7 @@ const CompetitiveAdvantageRanking = () => {
         // Fetch data from API
         const fetchRankingData = async () => {
             try {
-                const response = await fetch("http://127.0.0.1:5000/api/competitive_advantage_score");
+                const response = await fetch("https://stockify-backend-4lkh.onrender.com/api/competitive_advantage_score");
                 if (!response.ok) {
                     throw new Error("Failed to fetch data");
                 }
