@@ -9,6 +9,10 @@ const CompetitiveAdvantageRanking = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         // Fetch data from API
         const fetchRankingData = async () => {
             try {
