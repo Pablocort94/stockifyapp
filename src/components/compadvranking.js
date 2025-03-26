@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './compadvranking.css';
+import API_URL from "../config"; // Import API_URL
 
 
 const CompetitiveAdvantageRanking = () => {
@@ -11,7 +12,7 @@ const CompetitiveAdvantageRanking = () => {
         // Fetch data from API
         const fetchRankingData = async () => {
             try {
-                const response = await fetch("https://stockify-backend-4lkh.onrender.com/api/competitive_advantage_score");
+                const response = await fetch(`${API_URL}/api/competitive_advantage_score`);
                 if (!response.ok) {
                     throw new Error("Failed to fetch data");
                 }
