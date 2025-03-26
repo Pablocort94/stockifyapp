@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./simulationgame.css";
+import API_URL from "../config"; // Import API_URL
 
 const SimulationGame = () => {
   const [stocks, setStocks] = useState([]);
@@ -15,7 +16,7 @@ const SimulationGame = () => {
   useEffect(() => {
     const fetchStocks = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/simulationgame?target_year=2018');
+        const response = await fetch(`${API_URL}/api/simulationgame?target_year=2018`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -31,7 +32,7 @@ const SimulationGame = () => {
 
   const fetchSimulationResults = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/simulationgameresults?target_year=2017');
+      const response = await fetch(`${API_URL}/api/simulationgameresults?target_year=2017`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

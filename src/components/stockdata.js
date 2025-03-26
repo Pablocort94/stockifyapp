@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Table from './table';
 import './stockdata.css';
+import API_URL from "../config"; // Import API_URL
 
 const StockData = () => {
   const [stockName, setStockName] = useState('');
@@ -15,7 +16,7 @@ const StockData = () => {
     setStockName(value);
 
     if (value) {
-      fetch(`http://127.0.0.1:5000/api/search_stocks?query=${value}`)
+      fetch(`${API_URL}/api/search_stocks?query=${value}`)
         .then(response => response.json())
         .then(data => setSuggestions(data))
         .catch(error => console.error('Error fetching suggestions:', error));
@@ -38,7 +39,7 @@ const StockData = () => {
 
   const handleSearchClick = () => {
     setTableName(selectedTableName); // Update selectedTableName only when Search is clicked
-    const url = `http://127.0.0.1:5000/api/stocks/${stockName}/${selectedTableName}`;
+    const url = `${API_URL}/api/stocks/${stockName}/${selectedTableName}`;
     fetch(url)
       .then(response => response.json())
       .then(data => setData(data.data))//seteas para que vaya dentro del objeto data al path del json data seria el equivalente a decir $.data en nifi

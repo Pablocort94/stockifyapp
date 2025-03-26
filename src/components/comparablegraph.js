@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GraphComponent from './graph.js';
 import './comparablegraph.css';
+import API_URL from "../config"; // Import API_URL
 
 const ComparableGraph = () => {
     const [fields, setFields] = useState([]); // Available fields for the dropdown
@@ -163,7 +164,7 @@ const ComparableGraph = () => {
 
     // Fetch fields and tickers
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/api/graph_fields")
+        fetch(`${API_URL}/api/graph_fields`)
             .then(response => response.json())
             .then(data => {
                 const excludedFields = ["ticker","operating_income_sector","mean_quick_ratio_sector","mean_ebitda_revenue_margin_sector","mean_accounts_receivables_turnover_ratio_sector","mean_debt_to_equity_ratio_sector","mean_interest_coverage_ratio_sector",
@@ -186,7 +187,7 @@ const ComparableGraph = () => {
             })
             .catch(error => console.error("Error fetching fields:", error));
 
-        fetch("http://127.0.0.1:5000/api/comparable_graph_predictive_search")
+        fetch(`${API_URL}/api/comparable_graph_predictive_search`)
             .then(response => response.json())
             .then(data => setTickers(data.data || []))
             .catch(error => console.error("Error fetching tickers:", error));
@@ -221,7 +222,7 @@ const ComparableGraph = () => {
             console.log("Selected Field:", selectedField);
             console.log("Selected Tickers:", selectedTickers);
     
-            fetch("http://127.0.0.1:5000/api/graph_data")
+            fetch(`${API_URL}/api/graph_data`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}`);

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './stockscreener.css';
+import API_URL from "../config"; // Import API_URL
+
 
 const StockScreener = () => {
   const [fields, setFields] = useState([]);
@@ -178,7 +180,7 @@ const StockScreener = () => {
   );
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/stock_screener_available_fields")
+    fetch(`${API_URL}/api/stock_screener_available_fields`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch fields");
@@ -232,7 +234,7 @@ const StockScreener = () => {
   
     console.log("Request payload:", JSON.stringify(requestPayload, null, 2));
   
-    fetch("http://127.0.0.1:5000/api/screener/search", {
+    fetch(`${API_URL}/api/screener/search`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
